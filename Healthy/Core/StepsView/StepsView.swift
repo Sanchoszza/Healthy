@@ -77,6 +77,7 @@ struct StepsView: View {
                         y: .value("Шаги", viewModel.steps[date] ?? 0),
                         width: viewModel.intervalWidth
                     )
+                    .foregroundStyle(Color.red.gradient)
                 }
             }
             .frame(height: 250)
